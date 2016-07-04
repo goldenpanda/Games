@@ -3,7 +3,7 @@ var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload:
 
 function preload() {
 
-    game.load.image('car', 'space ship-00.png');
+    game.load.image('car', 'assets/sprites/space ship-00.png');
     game.load.image('baddie', 'assets/sprites/space-baddie.png');
 
 }
