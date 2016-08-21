@@ -1,0 +1,7 @@
+ContentLibrary = 
+{
+	string Name = "UltimateFail",
+	uint64 LibraryId = 57084430f6b3947c,
+	string SourceControlType = "",
+	bool ReadOnly = false,
+},
