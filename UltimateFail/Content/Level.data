@@ -104,9 +104,9 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 78.6847076, 78.6846924],
+			Vec3 Translation = [-4.18043852, 27.5616055, 97.5983582],
 			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [-0.382683456, -1.18282166e-08, -8.36381275e-09, 0.923879504],
+			Quat Rotation = [-0.101911813, -0.0156254619, -0.0016009555, 0.994669437],
 		},
 		Camera = 
 		{
@@ -121,10 +121,10 @@ Level =
 		EditorCameraController = 
 		{
 			ControlMode ControlMode = Orbit,
-			float LookDistance = 111.27697,
-			float VerticalAngle = 0.785398245,
-			float HorizontalAngle = 0,
-			Vec3 LookTarget = [0, 0, 0],
+			float LookDistance = 135.913971,
+			float VerticalAngle = 0.204203367,
+			float HorizontalAngle = 0.0314157642,
+			Vec3 LookTarget = [0, 0, -35.4260406],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -148,7 +148,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 14.776, 47.7667999],
+			Vec3 Translation = [0, 14.776, 100],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0.149437994, -1.10518998e-08, -3.26607008e-09, 0.988771021],
 		},
@@ -176,43 +176,6 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "Cube",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [0, 0, 0],
-			Vec3 Scale = [100, 1, 100],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		Model = 
-		{
-			bool Visible = true,
-			bool VisibilityCulling = true,
-			bool VisibilityEvents = true,
-			bool CastShadows = true,
-			string MaterialName = "4de020863e85bb61:DefaultMaterial",
-			string MeshName = "4de0354322b345ae:Cube",
-			Vec4 Color = [1, 1, 1, 1],
-		},
-		BoxCollider = 
-		{
-			bool Ghost = false,
-			bool SendsMessages = true,
-			bool Seamless = true,
-			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
-			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
-			Vec3 Offset = [0, 0, 0],
-			Vec3 Size = [0.5, 0.5, 0.5],
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 5,
-		},
-		Named = 
-		{
 			string Name = "MrFartPants",
 		},
 		Archetyped = 
@@ -221,8 +184,8 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-0.272714674, 1, 0],
-			Vec3 Scale = [1, 1, 1],
+			Vec3 Translation = [37.3478775, 6.45404434, -3.81469727e-06],
+			Vec3 Scale = [1, 10, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		Model = 
@@ -233,7 +196,7 @@ Level =
 			bool CastShadows = true,
 			string MaterialName = "4de020863e816dde:Grid",
 			string MeshName = "4de0354322b376ae:Sphere",
-			Vec4 Color = [1, 1, 1, 1],
+			Vec4 Color = [0, 0, 0, 1],
 		},
 		RigidBody = 
 		{
@@ -266,9 +229,9 @@ Level =
 			bool LockZAxis = false,
 			bool ForwardEvents = false,
 			float Gravity = 10,
-			float JumpSpeed = 444,
+			float JumpSpeed = 15,
 			float JumpCancelFactor = 0.5,
-			float MaxMoveSpeed = 10,
+			float MaxMoveSpeed = 40,
 			float MaxFallSpeed = 50,
 			float GroundAcceleration = 50,
 			float AirAcceleration = 10,
@@ -282,6 +245,212 @@ Level =
 			bool Jumping = false,
 			float GroundTraction = 1,
 			float AirTraction = 1,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Named = 
+		{
+			string Name = "MrFartPants",
+		},
+		Archetyped = 
+		{
+			string Name = "4de020863e8476d9:Sphere",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-25.5064659, 6.45404434, -3.81469727e-06],
+			Vec3 Scale = [1, 10, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = true,
+			string MaterialName = "4de020863e816dde:Grid",
+			string MeshName = "4de0354322b376ae:Sphere",
+			Vec4 Color = [1, 0, 0, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = false,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 50, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1,
+		},
+		PlayerController = 
+		{
+		},
+		SweptController = 
+		{
+			Vec3 WorldUp = [0, 1, 0],
+			bool LockZAxis = false,
+			bool ForwardEvents = false,
+			float Gravity = 10,
+			float JumpSpeed = 50,
+			float JumpCancelFactor = 0.5,
+			float MaxMoveSpeed = 100,
+			float MaxFallSpeed = 50,
+			float GroundAcceleration = 50,
+			float AirAcceleration = 10,
+			float GroundDeceleration = 50,
+			float AirDeceleration = 10,
+			float MaxGroundSlope = 45,
+			float MaxCeilingSlope = 45,
+			float GroundSnapDistance = 0.100000001,
+			Vec3 ControllerVelocity = [0, 0, 0],
+			bool Grounded = true,
+			bool Jumping = false,
+			float GroundTraction = 1,
+			float AirTraction = 1,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [5.07272673, 13.6032639, -373.766693],
+			Vec3 Scale = [10, 5, 10],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0, 0.880000114, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5770fde5625c608a:derpy puppy",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [50, 50, 50],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 7,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-1.28286314, -11.0645943, -35.4260406],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		Model = 
+		{
+			bool Visible = false,
+			bool VisibilityCulling = false,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			string MaterialName = "4e1be40d46f45030:EditorMaterial",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 8,
+		},
+		Named = 
+		{
+			string Name = "Cube",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-1.56355667, -26.4248428, -35.4260406],
+			Vec3 Scale = [174.686264, 11, 100],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = true,
+			string MaterialName = "4de020863e85bb61:DefaultMaterial",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [0.935000002, 0.186999977, 0.186999977, 1],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
 		},
 	},
 },
