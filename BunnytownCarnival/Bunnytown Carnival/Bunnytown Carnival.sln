@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bunnytown Carnival.Plugins", "Bunnytown Carnival.Plugins.csproj", "{5EF470E8-81B7-B9D5-10FB-4B9A255B0DF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bunnytown Carnival.Editor.Plugins", "Bunnytown Carnival.Editor.Plugins.csproj", "{F29C53DE-14EE-737A-A548-8E83CC7CA6F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EF470E8-81B7-B9D5-10FB-4B9A255B0DF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF470E8-81B7-B9D5-10FB-4B9A255B0DF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF470E8-81B7-B9D5-10FB-4B9A255B0DF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF470E8-81B7-B9D5-10FB-4B9A255B0DF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F29C53DE-14EE-737A-A548-8E83CC7CA6F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29C53DE-14EE-737A-A548-8E83CC7CA6F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F29C53DE-14EE-737A-A548-8E83CC7CA6F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F29C53DE-14EE-737A-A548-8E83CC7CA6F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
